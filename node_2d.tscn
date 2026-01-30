@@ -12,7 +12,7 @@ position = Vector2(31, 16)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="Main_UI" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +20,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Main_UI"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.0217014
@@ -31,11 +31,11 @@ texture = ExtResource("2_0e48y")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="CanvasLayer/Control/TextureRect"]
+[node name="Label" type="Label" parent="CanvasLayer/Main_UI/TextureRect"]
 layout_mode = 0
-offset_left = 164.0
-offset_top = 137.0
-offset_right = 227.0
-offset_bottom = 179.0
+offset_left = 151.0
+offset_top = 118.0
+offset_right = 214.0
+offset_bottom = 160.0
 theme_override_font_sizes/font_size = 30
 text = "0/10"
