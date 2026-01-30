@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 400  # speed in pixels/sec
+var speed = 250  # speed in pixels/sec
 var available_mask = [
 	"Miskin",
 	"Mengengah",
