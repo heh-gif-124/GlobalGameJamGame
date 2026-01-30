@@ -1,20 +1,146 @@
-[gd_scene load_steps=4 format=3 uid="uid://dxq52v327d6d2"]
+[gd_scene load_steps=21 format=3 uid="uid://dxq52v327d6d2"]
 
 [ext_resource type="Script" uid="uid://bctyorysu7bbm" path="res://Src/Assets/Player/player.gd" id="1_6xnm3"]
-[ext_resource type="Texture2D" uid="uid://c1fyk3g4jhbud" path="res://icon.svg" id="2_8r0dd"]
+[ext_resource type="Texture2D" uid="uid://dvh48cq8pl0s3" path="res://Src/Sprites/Pelayan 1/F.png" id="2_2qoyk"]
+[ext_resource type="Texture2D" uid="uid://cn6efb5ftc4ul" path="res://Src/Sprites/Pelayan 1/F+N.png" id="2_8r0dd"]
+[ext_resource type="Texture2D" uid="uid://dyalaubhhdk42" path="res://Src/Sprites/Pelayan 2/F.png" id="2_jhahh"]
+[ext_resource type="Texture2D" uid="uid://bbk8q0k2exnle" path="res://Src/Sprites/Pelayan 2/F+N.png" id="3_jhahh"]
+[ext_resource type="Texture2D" uid="uid://bdr3yimnptkd4" path="res://Src/Sprites/Pelayan 2/L1.png" id="4_b7ehm"]
+[ext_resource type="Texture2D" uid="uid://dns4g0torjevc" path="res://Src/Sprites/Pelayan 2/LD.png" id="5_uyarh"]
+[ext_resource type="Texture2D" uid="uid://cqkoadwsqkmus" path="res://Src/Sprites/Pelayan 1/R1.png" id="6_b7ehm"]
+[ext_resource type="Texture2D" uid="uid://wte46kbpv80f" path="res://Src/Sprites/Pelayan 1/R2.png" id="7_uyarh"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tmuk"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d46nm"]
+height = 42.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_enq8g"]
+atlas = ExtResource("2_2qoyk")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyihc"]
+atlas = ExtResource("2_8r0dd")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uyarh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_enq8g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyihc")
+}],
+"loop": true,
+"name": &"has_food",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation_2",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation_3",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5v6k"]
+atlas = ExtResource("2_jhahh")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uyarh"]
+atlas = ExtResource("3_jhahh")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryokq"]
+atlas = ExtResource("4_b7ehm")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7k0g"]
+atlas = ExtResource("5_uyarh")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03kr5"]
+atlas = ExtResource("6_b7ehm")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d46nm"]
+atlas = ExtResource("7_uyarh")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7k3cw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e5v6k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uyarh")
+}],
+"loop": true,
+"name": &"has_food",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryokq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7k0g")
+}],
+"loop": true,
+"name": &"left_walk",
+"speed": 50.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"right_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03kr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d46nm")
+}],
+"loop": true,
+"name": &"right_walk_1",
+"speed": 50.0
+}]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_6xnm3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_4tmuk")
+shape = SubResource("CapsuleShape2D_d46nm")
 debug_color = Color(2.21401e-06, 0.63965, 0.361595, 0.42)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Miskin" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_uyarh")
+speed_scale = 0.1
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(5.96046e-08, -4.76837e-07)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_8r0dd")
+[node name="Menengah" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_7k3cw")
+animation = &"left_walk"
+frame_progress = 0.697611
+speed_scale = 0.1

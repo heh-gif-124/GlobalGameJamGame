@@ -1,9 +1,30 @@
-[gd_scene load_steps=6 format=3 uid="uid://n0axidbhuwt4"]
+[gd_scene load_steps=8 format=3 uid="uid://n0axidbhuwt4"]
 
 [ext_resource type="PackedScene" uid="uid://dxq52v327d6d2" path="res://Src/Assets/Player/Player.tscn" id="1_wtcfe"]
 [ext_resource type="Texture2D" uid="uid://bloy4jp3xyur7" path="res://Src/Interface/task bar.png" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://cn7oa7gbhetn1" path="res://Src/Sprites/placeholder.png" id="3_epypp"]
+[ext_resource type="Shader" uid="uid://151uafofj243" path="res://Src/background.gdshader" id="4_0hol4"]
 [ext_resource type="Script" uid="uid://p8mpn08jouad" path="res://Src/Assets/Areas/GetFood.gd" id="5_q6r6c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0hol4"]
+shader = ExtResource("4_0hol4")
+shader_parameter/grid_color = Color(0.799126, 0.000499405, 0.799121, 0.243137)
+shader_parameter/grid_spacing = 50.0
+shader_parameter/line_thickness = 1.0
+shader_parameter/grid_visual_world_pos = Vector2(0, 0)
+shader_parameter/grid_visual_world_size = Vector2(1920, 1080)
+shader_parameter/global_time_sec = 0.0
+shader_parameter/active_pulse_count = 10000
+shader_parameter/ripple_origin_world = PackedVector2Array(0, 0, 0, 0)
+shader_parameter/ripple_start_time = PackedFloat32Array(0.3)
+shader_parameter/implosion_origin_world = PackedVector2Array(0, 0, 0, 0, 0, 0)
+shader_parameter/implosion_start_time = PackedFloat32Array(0, 0, 0)
+shader_parameter/ripple_speed = 1200.0
+shader_parameter/ripple_thickness = 70.0
+shader_parameter/ripple_peak_strength = 45.0
+shader_parameter/implosion_speed = 1000.0
+shader_parameter/implosion_thickness = 80.0
+shader_parameter/implosion_peak_strength = 60.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
 
@@ -11,6 +32,8 @@
 
 [node name="Player" parent="." instance=ExtResource("1_wtcfe")]
 position = Vector2(31, 16)
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -49,6 +72,38 @@ position = Vector2(-9, -2)
 scale = Vector2(2.20313, 2)
 texture = ExtResource("3_epypp")
 
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="Control" type="Control" parent="CanvasLayer2"]
+z_index = -12
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2/Control"]
+z_index = -12
+material = SubResource("ShaderMaterial_0hol4")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer2/Control"]
+z_index = -13
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.853659, 0.781004, 0.828334, 1)
+
 [node name="CounterArea" type="Area2D" parent="."]
 script = ExtResource("5_q6r6c")
 metadata/_custom_type_script = "uid://p8mpn08jouad"
@@ -58,9 +113,6 @@ position = Vector2(0, -175)
 scale = Vector2(20.0763, 2.93487)
 shape = SubResource("RectangleShape2D_kdubu")
 debug_color = Color(0.84868, 0.00091949, 0.903118, 0.42)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.5, 1.5)
 
 [connection signal="body_entered" from="CounterArea" to="CounterArea" method="_food_obtain"]
 [connection signal="replacing_by" from="CounterArea" to="CounterArea" method="_food_obtain"]
