@@ -2,7 +2,7 @@ extends Control
 # Drag your 4 mask nodes into this array in the inspector
 # Or use get_children() if they are the only children of a node
 @export var mask_icons: Array[Node2D] 
-var total_seconds = 30 # 5 minutes for example
+var total_seconds = 50 # 5 minutes for example
 func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("first_mask"):

@@ -641,7 +641,7 @@ use_parent_material = true
 scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_7k3cw")
 animation = &"right_walk_food"
-frame_progress = 0.559363
+frame_progress = 0.556266
 
 [node name="Kaya" type="AnimatedSprite2D" parent="."]
 visible = false

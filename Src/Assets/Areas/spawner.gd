@@ -1,7 +1,7 @@
 extends Node2D
 @export var silly : Array[PackedScene]
 
-var max=5
+var max=6
 var current_amount = 0
 func _on_timer_timeout() -> void:
 	if current_amount < max:

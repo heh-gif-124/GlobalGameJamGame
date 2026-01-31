@@ -1,28 +1,28 @@
-[gd_scene load_steps=33 format=4 uid="uid://n0axidbhuwt4"]
+[gd_scene load_steps=33 format=4 uid="uid://byehblcpy3s5j"]
 
-[ext_resource type="Script" uid="uid://d38g3ces0mr0r" path="res://Src/Assets/node_2d.gd" id="1_kdubu"]
-[ext_resource type="PackedScene" uid="uid://dxq52v327d6d2" path="res://Assets_2/Player/Player.tscn" id="1_wtcfe"]
-[ext_resource type="Texture2D" uid="uid://bloy4jp3xyur7" path="res://Src/Interface/task bar.png" id="2_0e48y"]
-[ext_resource type="Script" uid="uid://ceqka3enay22w" path="res://Src/Assets/main_ui.gd" id="3_rjqkl"]
-[ext_resource type="Texture2D" uid="uid://bv1nj6lei27vu" path="res://Src/Sprites/Mask/mask1.png" id="4_k73cj"]
-[ext_resource type="Script" uid="uid://df282mcruedft" path="res://Src/Assets/Areas/GiveFood.gd" id="5_kdubu"]
-[ext_resource type="Script" uid="uid://p8mpn08jouad" path="res://Src/Assets/Areas/GetFood.gd" id="5_q6r6c"]
-[ext_resource type="Texture2D" uid="uid://w45a5wwnlkct" path="res://Src/Sprites/Mask/mask2.png" id="5_rjqkl"]
-[ext_resource type="Texture2D" uid="uid://fr36s41y38tg" path="res://Src/Sprites/Mask/mask3.png" id="6_fs4d3"]
-[ext_resource type="Texture2D" uid="uid://bs8j7nesjv4jo" path="res://Src/Sprites/tembok lantai.png" id="6_ir8iy"]
-[ext_resource type="Texture2D" uid="uid://cq5snbrw4jetx" path="res://Src/Sprites/Mask/Mask4.png" id="7_7vxoj"]
-[ext_resource type="PackedScene" uid="uid://c6bmoepaqnb1w" path="res://Src/Assets/NPC/NPC.tscn" id="7_d21ai"]
-[ext_resource type="Texture2D" uid="uid://c1fyk3g4jhbud" path="res://icon.svg" id="8_rj586"]
-[ext_resource type="Texture2D" uid="uid://b0fqnokaunspm" path="res://Src/Sprites/Objects/output-onlinepngtools.png" id="9_4d7sh"]
-[ext_resource type="Texture2D" uid="uid://tfoalk5pm0ww" path="res://Src/Sprites/Objects/output-onlinetools.png" id="10_ir8iy"]
-[ext_resource type="Texture2D" uid="uid://cn8dtnngl7vog" path="res://Src/Sprites/Objects/meja bar.png" id="11_hqns4"]
-[ext_resource type="Script" uid="uid://0xu1q46iuhv8" path="res://Src/Assets/Areas/spawner.gd" id="11_x0ka3"]
-[ext_resource type="Texture2D" uid="uid://dvj6lx1ogbbyy" path="res://Src/Sprites/wc kanan.png" id="13_0h7mo"]
-[ext_resource type="Texture2D" uid="uid://c2od3ol74nhn2" path="res://Src/Sprites/wc kiri.png" id="14_nr8wp"]
-[ext_resource type="Texture2D" uid="uid://bgeklhlqhsgkl" path="res://Src/Sprites/NPC 1/e3.png" id="15_e8dv2"]
-[ext_resource type="Texture2D" uid="uid://8i5mn0uqiu11" path="res://Src/Sprites/Tak berjudul181_20260130161704.png" id="20_fs4d3"]
-[ext_resource type="Texture2D" uid="uid://w0gxtx5fjiwb" path="res://Src/Sprites/Tak berjudul181_20260130161028.png" id="21_7vxoj"]
-[ext_resource type="Texture2D" uid="uid://c5hc3h7kbnoic" path="res://Src/Sprites/NPC 1/e1.png" id="22_ei405"]
+[ext_resource type="Script" uid="uid://d38g3ces0mr0r" path="res://Src/Assets/node_2d.gd" id="1_2g1yb"]
+[ext_resource type="PackedScene" uid="uid://dxq52v327d6d2" path="res://Src/Assets/Player/Player.tscn" id="2_0lcl8"]
+[ext_resource type="Script" uid="uid://ceqka3enay22w" path="res://Src/Assets/main_ui.gd" id="3_p1166"]
+[ext_resource type="Texture2D" uid="uid://bloy4jp3xyur7" path="res://Src/Interface/task bar.png" id="4_kp6ii"]
+[ext_resource type="Texture2D" uid="uid://bv1nj6lei27vu" path="res://Src/Sprites/Mask/mask1.png" id="5_nqrg8"]
+[ext_resource type="Texture2D" uid="uid://w45a5wwnlkct" path="res://Src/Sprites/Mask/mask2.png" id="6_3brtn"]
+[ext_resource type="Texture2D" uid="uid://fr36s41y38tg" path="res://Src/Sprites/Mask/mask3.png" id="7_exy8o"]
+[ext_resource type="Texture2D" uid="uid://cq5snbrw4jetx" path="res://Src/Sprites/Mask/Mask4.png" id="8_n2naj"]
+[ext_resource type="Texture2D" uid="uid://bs8j7nesjv4jo" path="res://Src/Sprites/tembok lantai.png" id="9_2lqyf"]
+[ext_resource type="Script" uid="uid://p8mpn08jouad" path="res://Src/Assets/Areas/GetFood.gd" id="10_3fc7d"]
+[ext_resource type="Script" uid="uid://df282mcruedft" path="res://Src/Assets/Areas/GiveFood.gd" id="11_chykk"]
+[ext_resource type="Texture2D" uid="uid://8i5mn0uqiu11" path="res://Src/Sprites/Tak berjudul181_20260130161704.png" id="12_kuj8k"]
+[ext_resource type="Texture2D" uid="uid://w0gxtx5fjiwb" path="res://Src/Sprites/Tak berjudul181_20260130161028.png" id="13_vkugn"]
+[ext_resource type="Texture2D" uid="uid://c5hc3h7kbnoic" path="res://Src/Sprites/NPC 1/e1.png" id="14_3brhk"]
+[ext_resource type="Texture2D" uid="uid://bgeklhlqhsgkl" path="res://Src/Sprites/NPC 1/e3.png" id="15_7qte5"]
+[ext_resource type="Texture2D" uid="uid://c1fyk3g4jhbud" path="res://icon.svg" id="16_6ased"]
+[ext_resource type="Texture2D" uid="uid://b0fqnokaunspm" path="res://Src/Sprites/Objects/output-onlinepngtools.png" id="17_vnlif"]
+[ext_resource type="Texture2D" uid="uid://tfoalk5pm0ww" path="res://Src/Sprites/Objects/output-onlinetools.png" id="18_5wncp"]
+[ext_resource type="Texture2D" uid="uid://cn8dtnngl7vog" path="res://Src/Sprites/Objects/meja bar.png" id="19_li71q"]
+[ext_resource type="Script" uid="uid://0xu1q46iuhv8" path="res://Src/Assets/Areas/spawner.gd" id="20_7ov7e"]
+[ext_resource type="PackedScene" uid="uid://c6bmoepaqnb1w" path="res://Src/Assets/NPC/NPC.tscn" id="21_lyibo"]
+[ext_resource type="Texture2D" uid="uid://dvj6lx1ogbbyy" path="res://Src/Sprites/wc kanan.png" id="22_1l3lx"]
+[ext_resource type="Texture2D" uid="uid://c2od3ol74nhn2" path="res://Src/Sprites/wc kiri.png" id="23_c0nbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
 
@@ -47,7 +47,7 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(-8, -8, 8, -8, 8, 8, -8
 agent_radius = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hqns4"]
-texture = ExtResource("8_rj586")
+texture = ExtResource("16_6ased")
 0:0/0 = 0
 0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_4d7sh")
 1:0/0 = 0
@@ -185,10 +185,10 @@ sources/0 = SubResource("TileSetAtlasSource_hqns4")
 size = Vector2(1376, 640)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_kdubu")
-required_tasked = 8
+script = ExtResource("1_2g1yb")
+required_tasked = 4
 
-[node name="Player" parent="." instance=ExtResource("1_wtcfe")]
+[node name="Player" parent="." instance=ExtResource("2_0lcl8")]
 position = Vector2(31, 16)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -200,7 +200,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("3_rjqkl")
+script = ExtResource("3_p1166")
 mask_icons = [NodePath("Mask1"), NodePath("Mask2"), NodePath("Mask3"), NodePath("Mask4")]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Main_UI"]
@@ -210,7 +210,7 @@ anchor_left = -0.0217014
 anchor_top = -0.0478395
 anchor_right = 0.861111
 anchor_bottom = 0.834877
-texture = ExtResource("2_0e48y")
+texture = ExtResource("4_kp6ii")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -226,25 +226,25 @@ text = "0/10"
 [node name="Mask1" type="Sprite2D" parent="CanvasLayer/Main_UI"]
 position = Vector2(168, 548)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("4_k73cj")
+texture = ExtResource("5_nqrg8")
 
 [node name="Mask2" type="Sprite2D" parent="CanvasLayer/Main_UI"]
 modulate = Color(0.485703, 0.485704, 0.485703, 1)
 position = Vector2(168, 548)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("5_rjqkl")
+texture = ExtResource("6_3brtn")
 
 [node name="Mask3" type="Sprite2D" parent="CanvasLayer/Main_UI"]
 modulate = Color(0.486275, 0.486275, 0.486275, 1)
 position = Vector2(168, 548)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("6_fs4d3")
+texture = ExtResource("7_exy8o")
 
 [node name="Mask4" type="Sprite2D" parent="CanvasLayer/Main_UI"]
 modulate = Color(0.486275, 0.486275, 0.486275, 1)
 position = Vector2(168, 548)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("7_7vxoj")
+texture = ExtResource("8_n2naj")
 
 [node name="TImeLabel" type="Label" parent="CanvasLayer/Main_UI"]
 layout_mode = 1
@@ -261,10 +261,10 @@ z_index = -3
 texture_filter = 3
 position = Vector2(-24, 16)
 scale = Vector2(1.034, 1)
-texture = ExtResource("6_ir8iy")
+texture = ExtResource("9_2lqyf")
 
 [node name="CounterArea" type="Area2D" parent="."]
-script = ExtResource("5_q6r6c")
+script = ExtResource("10_3fc7d")
 metadata/_custom_type_script = "uid://p8mpn08jouad"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CounterArea"]
@@ -279,63 +279,10 @@ physics_interpolation_mode = 1
 position = Vector2(0, 48)
 zoom = Vector2(0.6, 0.6)
 
-[node name="GiveArea8" type="Area2D" parent="."]
-position = Vector2(-560, -88)
-scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
-metadata/_custom_type_script = "uid://df282mcruedft"
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GiveArea8"]
-position = Vector2(62.5, 52)
-shape = SubResource("RectangleShape2D_q6r6c")
-
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="GiveArea8"]
-affect_navigation_mesh = true
-
-[node name="TakBerjudul18120260130161704" type="Sprite2D" parent="GiveArea8"]
-z_index = 2
-position = Vector2(64, 56)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
-
-[node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea8"]
-z_index = -1
-position = Vector2(72, 40)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
-
-[node name="E1" type="Sprite2D" parent="GiveArea8"]
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
-
-[node name="E2" type="Sprite2D" parent="GiveArea8"]
-visible = false
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
-
-[node name="Label" type="Label" parent="GiveArea8"]
-visible = false
-offset_left = -82.0513
-offset_top = -92.3077
-offset_right = 208.949
-offset_bottom = -33.3077
-theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 20
-text = "████! shouldn't you be looking when your walking?!"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="DissapearTimer" type="Timer" parent="GiveArea8"]
-wait_time = 2.0
-autostart = true
-
 [node name="GiveArea9" type="Area2D" parent="."]
 position = Vector2(-312, -88)
 scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
+script = ExtResource("11_chykk")
 metadata/_custom_type_script = "uid://df282mcruedft"
 metadata/_edit_group_ = true
 
@@ -350,24 +297,24 @@ affect_navigation_mesh = true
 z_index = 2
 position = Vector2(64, 56)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
+texture = ExtResource("12_kuj8k")
 
 [node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea9"]
 z_index = -1
 position = Vector2(72, 40)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
+texture = ExtResource("13_vkugn")
 
 [node name="E1" type="Sprite2D" parent="GiveArea9"]
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
+texture = ExtResource("14_3brhk")
 
 [node name="E2" type="Sprite2D" parent="GiveArea9"]
 visible = false
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
+texture = ExtResource("15_7qte5")
 
 [node name="Label" type="Label" parent="GiveArea9"]
 visible = false
@@ -388,7 +335,7 @@ autostart = true
 [node name="GiveArea10" type="Area2D" parent="."]
 position = Vector2(-312, 96)
 scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
+script = ExtResource("11_chykk")
 metadata/_custom_type_script = "uid://df282mcruedft"
 metadata/_edit_group_ = true
 
@@ -403,24 +350,24 @@ affect_navigation_mesh = true
 z_index = 2
 position = Vector2(64, 56)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
+texture = ExtResource("12_kuj8k")
 
 [node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea10"]
 z_index = -1
 position = Vector2(72, 40)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
+texture = ExtResource("13_vkugn")
 
 [node name="E1" type="Sprite2D" parent="GiveArea10"]
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
+texture = ExtResource("14_3brhk")
 
 [node name="E2" type="Sprite2D" parent="GiveArea10"]
 visible = false
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
+texture = ExtResource("15_7qte5")
 
 [node name="Label" type="Label" parent="GiveArea10"]
 visible = false
@@ -438,63 +385,10 @@ autowrap_mode = 2
 wait_time = 2.0
 autostart = true
 
-[node name="GiveArea11" type="Area2D" parent="."]
-position = Vector2(-560, 96)
-scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
-metadata/_custom_type_script = "uid://df282mcruedft"
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GiveArea11"]
-position = Vector2(62.5, 52)
-shape = SubResource("RectangleShape2D_q6r6c")
-
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="GiveArea11"]
-affect_navigation_mesh = true
-
-[node name="TakBerjudul18120260130161704" type="Sprite2D" parent="GiveArea11"]
-z_index = 2
-position = Vector2(64, 56)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
-
-[node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea11"]
-z_index = -1
-position = Vector2(72, 40)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
-
-[node name="E1" type="Sprite2D" parent="GiveArea11"]
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
-
-[node name="E2" type="Sprite2D" parent="GiveArea11"]
-visible = false
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
-
-[node name="Label" type="Label" parent="GiveArea11"]
-visible = false
-offset_left = -82.0513
-offset_top = -92.3077
-offset_right = 208.949
-offset_bottom = -33.3077
-theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 20
-text = "████! shouldn't you be looking when your walking?!"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="DissapearTimer" type="Timer" parent="GiveArea11"]
-wait_time = 2.0
-autostart = true
-
 [node name="GiveArea12" type="Area2D" parent="."]
 position = Vector2(120, -88)
 scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
+script = ExtResource("11_chykk")
 metadata/_custom_type_script = "uid://df282mcruedft"
 metadata/_edit_group_ = true
 
@@ -509,24 +403,24 @@ affect_navigation_mesh = true
 z_index = 2
 position = Vector2(64, 56)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
+texture = ExtResource("12_kuj8k")
 
 [node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea12"]
 z_index = -1
 position = Vector2(72, 40)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
+texture = ExtResource("13_vkugn")
 
 [node name="E1" type="Sprite2D" parent="GiveArea12"]
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
+texture = ExtResource("14_3brhk")
 
 [node name="E2" type="Sprite2D" parent="GiveArea12"]
 visible = false
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
+texture = ExtResource("15_7qte5")
 
 [node name="Label" type="Label" parent="GiveArea12"]
 visible = false
@@ -544,116 +438,10 @@ autowrap_mode = 2
 wait_time = 2.0
 autostart = true
 
-[node name="GiveArea13" type="Area2D" parent="."]
-position = Vector2(368, -88)
-scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
-metadata/_custom_type_script = "uid://df282mcruedft"
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GiveArea13"]
-position = Vector2(62.5, 52)
-shape = SubResource("RectangleShape2D_q6r6c")
-
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="GiveArea13"]
-affect_navigation_mesh = true
-
-[node name="TakBerjudul18120260130161704" type="Sprite2D" parent="GiveArea13"]
-z_index = 2
-position = Vector2(64, 56)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
-
-[node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea13"]
-z_index = -1
-position = Vector2(72, 40)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
-
-[node name="E1" type="Sprite2D" parent="GiveArea13"]
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
-
-[node name="E2" type="Sprite2D" parent="GiveArea13"]
-visible = false
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
-
-[node name="Label" type="Label" parent="GiveArea13"]
-visible = false
-offset_left = -82.0513
-offset_top = -92.3077
-offset_right = 208.949
-offset_bottom = -33.3077
-theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 20
-text = "████! shouldn't you be looking when your walking?!"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="DissapearTimer" type="Timer" parent="GiveArea13"]
-wait_time = 2.0
-autostart = true
-
-[node name="GiveArea14" type="Area2D" parent="."]
-position = Vector2(368, 96)
-scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
-metadata/_custom_type_script = "uid://df282mcruedft"
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GiveArea14"]
-position = Vector2(62.5, 52)
-shape = SubResource("RectangleShape2D_q6r6c")
-
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="GiveArea14"]
-affect_navigation_mesh = true
-
-[node name="TakBerjudul18120260130161704" type="Sprite2D" parent="GiveArea14"]
-z_index = 2
-position = Vector2(64, 56)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
-
-[node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea14"]
-z_index = -1
-position = Vector2(72, 40)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
-
-[node name="E1" type="Sprite2D" parent="GiveArea14"]
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
-
-[node name="E2" type="Sprite2D" parent="GiveArea14"]
-visible = false
-position = Vector2(61.5385, 10.2564)
-scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
-
-[node name="Label" type="Label" parent="GiveArea14"]
-visible = false
-offset_left = -82.0513
-offset_top = -92.3077
-offset_right = 208.949
-offset_bottom = -33.3077
-theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 20
-text = "████! shouldn't you be looking when your walking?!"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="DissapearTimer" type="Timer" parent="GiveArea14"]
-wait_time = 2.0
-autostart = true
-
 [node name="GiveArea15" type="Area2D" parent="."]
 position = Vector2(120, 96)
 scale = Vector2(0.78, 0.78)
-script = ExtResource("5_kdubu")
+script = ExtResource("11_chykk")
 metadata/_custom_type_script = "uid://df282mcruedft"
 metadata/_edit_group_ = true
 
@@ -668,24 +456,24 @@ affect_navigation_mesh = true
 z_index = 2
 position = Vector2(64, 56)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("20_fs4d3")
+texture = ExtResource("12_kuj8k")
 
 [node name="TakBerjudul18120260130161028" type="Sprite2D" parent="GiveArea15"]
 z_index = -1
 position = Vector2(72, 40)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("21_7vxoj")
+texture = ExtResource("13_vkugn")
 
 [node name="E1" type="Sprite2D" parent="GiveArea15"]
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("22_ei405")
+texture = ExtResource("14_3brhk")
 
 [node name="E2" type="Sprite2D" parent="GiveArea15"]
 visible = false
 position = Vector2(61.5385, 10.2564)
 scale = Vector2(0.0641026, 0.0641026)
-texture = ExtResource("15_e8dv2")
+texture = ExtResource("15_7qte5")
 
 [node name="Label" type="Label" parent="GiveArea15"]
 visible = false
@@ -757,44 +545,23 @@ position = Vector2(-680, 56)
 [node name="Marker2D2" type="Marker2D" parent="."]
 position = Vector2(640, 56)
 
-[node name="Marker2D3" type="Marker2D" parent="."]
-position = Vector2(-392, 162)
-
-[node name="Marker2D4" type="Marker2D" parent="."]
-position = Vector2(296, 162)
-
-[node name="Marker2D5" type="Marker2D" parent="."]
-position = Vector2(-392, -38)
-
-[node name="Marker2D7" type="Marker2D" parent="."]
-position = Vector2(-30, 56)
-
-[node name="Marker2D8" type="Marker2D" parent="."]
-position = Vector2(-30, 162)
-
-[node name="Marker2D9" type="Marker2D" parent="."]
-position = Vector2(-30, -38)
-
-[node name="Marker2D6" type="Marker2D" parent="."]
-position = Vector2(296, -38)
-
 [node name="Output-onlinepngtools" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-360, -360)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("9_4d7sh")
+texture = ExtResource("17_vnlif")
 
 [node name="Output-onlinetools" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(184, -352)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("10_ir8iy")
+texture = ExtResource("18_5wncp")
 
 [node name="MejaBar" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-32, -304)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("11_hqns4")
+texture = ExtResource("19_li71q")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="MejaBar"]
 
@@ -818,8 +585,8 @@ shape = SubResource("RectangleShape2D_hqns4")
 
 [node name="Spawner" type="Node2D" parent="."]
 position = Vector2(-32, 528)
-script = ExtResource("11_x0ka3")
-silly = Array[PackedScene]([ExtResource("7_d21ai")])
+script = ExtResource("20_7ov7e")
+silly = Array[PackedScene]([ExtResource("21_lyibo")])
 metadata/_custom_type_script = "uid://0xu1q46iuhv8"
 
 [node name="Timer" type="Timer" parent="Spawner"]
@@ -829,30 +596,22 @@ autostart = true
 [node name="WcKanan" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(1360, -88)
-texture = ExtResource("13_0h7mo")
+texture = ExtResource("22_1l3lx")
 
 [node name="WcKanan2" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-1360, -88)
-texture = ExtResource("14_nr8wp")
+texture = ExtResource("23_c0nbv")
 
 [connection signal="timeout" from="CanvasLayer/Main_UI/GameTImer" to="CanvasLayer/Main_UI" method="_on_game_t_imer_timeout"]
 [connection signal="body_entered" from="CounterArea" to="CounterArea" method="_food_obtain"]
 [connection signal="replacing_by" from="CounterArea" to="CounterArea" method="_food_obtain"]
-[connection signal="body_entered" from="GiveArea8" to="GiveArea8" method="_food_give"]
-[connection signal="timeout" from="GiveArea8/DissapearTimer" to="GiveArea8" method="_on_dissapear_timer_timeout"]
 [connection signal="body_entered" from="GiveArea9" to="GiveArea9" method="_food_give"]
 [connection signal="timeout" from="GiveArea9/DissapearTimer" to="GiveArea9" method="_on_dissapear_timer_timeout"]
 [connection signal="body_entered" from="GiveArea10" to="GiveArea10" method="_food_give"]
 [connection signal="timeout" from="GiveArea10/DissapearTimer" to="GiveArea10" method="_on_dissapear_timer_timeout"]
-[connection signal="body_entered" from="GiveArea11" to="GiveArea11" method="_food_give"]
-[connection signal="timeout" from="GiveArea11/DissapearTimer" to="GiveArea11" method="_on_dissapear_timer_timeout"]
 [connection signal="body_entered" from="GiveArea12" to="GiveArea12" method="_food_give"]
 [connection signal="timeout" from="GiveArea12/DissapearTimer" to="GiveArea12" method="_on_dissapear_timer_timeout"]
-[connection signal="body_entered" from="GiveArea13" to="GiveArea13" method="_food_give"]
-[connection signal="timeout" from="GiveArea13/DissapearTimer" to="GiveArea13" method="_on_dissapear_timer_timeout"]
-[connection signal="body_entered" from="GiveArea14" to="GiveArea14" method="_food_give"]
-[connection signal="timeout" from="GiveArea14/DissapearTimer" to="GiveArea14" method="_on_dissapear_timer_timeout"]
 [connection signal="body_entered" from="GiveArea15" to="GiveArea15" method="_food_give"]
 [connection signal="timeout" from="GiveArea15/DissapearTimer" to="GiveArea15" method="_on_dissapear_timer_timeout"]
 [connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_timer_timeout"]

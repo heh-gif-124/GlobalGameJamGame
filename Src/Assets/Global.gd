@@ -8,3 +8,4 @@ var available_mask = [
 	"Kaya",
 	"Konglo"
 	]
+var current_level = 1

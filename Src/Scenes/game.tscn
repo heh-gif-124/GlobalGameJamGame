@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://1gk3iuhhm04x"]
+
+[ext_resource type="Script" uid="uid://ctmgb4p8fphw" path="res://Src/Scenes/script/game.gd" id="1_qwt33"]
+[ext_resource type="PackedScene" uid="uid://di5kqtuccnfdd" path="res://Src/Scenes/Pause.tscn" id="2_5p5wd"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_qwt33")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_5p5wd")]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TaskLabel" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 101.0
+offset_bottom = 43.0
+theme_override_font_sizes/font_size = 32
+text = "TASK: 0/10"
+
+[node name="TimerLabel" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 60.0
+offset_right = 108.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 32
+text = "TIME: 00:10"
+
+[node name="BackButton" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 70.0
+offset_right = 170.0
+offset_bottom = 110.0
+text = "BACK TO MENU"
+
+[node name="GameTimer" type="Timer" parent="."]
