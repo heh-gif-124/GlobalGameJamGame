@@ -43,5 +43,7 @@ autowrap_mode = 1
 [node name="DialogTimer" type="Timer" parent="."]
 one_shot = true
 
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
 [connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]
 [connection signal="timeout" from="DialogTimer" to="." method="_on_dialog_timer_timeout"]

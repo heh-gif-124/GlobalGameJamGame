@@ -12,6 +12,7 @@ const max_speed: int = 250
 const accel: int = 15
 const frict: int = 8
 var current_mask = available_mask[0]
+
 func _ready() -> void:
 	$Miskin.visible = true
 	$Miskin.play("default")
@@ -60,11 +61,20 @@ func _swapping_mask():
 	elif Input.is_action_just_pressed("4th_mask"):
 		current_mask = available_mask[3]
 		print("swapped to: "+current_mask)
+	
+	if Input.is_action_just_pressed("weii"):
+		$AudioStreamPlayer2D.play(0)
+		$AnimationPlayer.play("5")
 
 func _animation_handler():
 	if current_mask == available_mask[0]:
 		if Global.has_food == true:
-			$Miskin.play("has_food")
+			if Input.is_action_pressed("right"):
+				$Miskin.play("left_walk_food")
+			elif Input.is_action_pressed("left"):
+				$Miskin.play("right_walk_food")
+			else:
+				$Miskin.play("has_food")
 		else:
 			if Input.is_action_pressed("right"):
 				$Miskin.play("left_walk")

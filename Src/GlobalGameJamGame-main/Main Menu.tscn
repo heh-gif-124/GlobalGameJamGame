@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://7t182k0wl733"]
+
+[ext_resource type="Script" path="res://Main Menu.gd" id="1_djdtr"]
+[ext_resource type="Texture2D" uid="uid://12yw8ny28o4w" path="res://Src/Assets/Interface/interface menu sample (1).jpg" id="2_i7tkc"]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_djdtr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1159.0
+offset_bottom = 652.0
+texture = ExtResource("2_i7tkc")
+expand_mode = 1
+
+[node name="Button Manager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="New Game" type="Button" parent="Button Manager"]
+modulate = Color(0.996078, 0.823529, 0.866667, 0)
+layout_mode = 0
+offset_left = 550.0
+offset_top = 261.0
+offset_right = 840.0
+offset_bottom = 372.0
+rotation = -0.151844
+
+[node name="Exit" type="Button" parent="Button Manager"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 556.0
+offset_top = 420.0
+offset_right = 843.0
+offset_bottom = 530.0
+rotation = -0.148353
+
+[connection signal="pressed" from="Button Manager/New Game" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Button Manager/Exit" to="." method="_on_exit_pressed"]
