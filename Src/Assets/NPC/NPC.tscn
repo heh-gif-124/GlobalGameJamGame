@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6bmoepaqnb1w"]
+
+[ext_resource type="Script" uid="uid://6ga3st2r3wgq" path="res://Src/Assets/NPC/character_body_2d.gd" id="1_0acad"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p2j5r"]
+radius = 15.0
+height = 60.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0acad"]
+radius = 21.0
+height = 72.0
+
+[node name="Npc" type="CharacterBody2D"]
+motion_mode = 1
+slide_on_ceiling = false
+wall_min_slide_angle = 0.0
+script = ExtResource("1_0acad")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_p2j5r")
+
+[node name="Hurtbox" type="Area2D" parent="." groups=["player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape2D_0acad")
+debug_color = Color(0.984694, 0, 0.341084, 0.42)
+
+[node name="WanderTimer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -70.0
+offset_top = -67.0
+offset_right = 74.0
+offset_bottom = -36.0
+theme_override_font_sizes/font_size = 10
+text = "████! shouldn't you be looking when your walking?!"
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="DialogTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]
+[connection signal="timeout" from="DialogTimer" to="." method="_on_dialog_timer_timeout"]
