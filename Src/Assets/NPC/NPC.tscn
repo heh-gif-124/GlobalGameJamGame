@@ -1,6 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6bmoepaqnb1w"]
+[gd_scene load_steps=16 format=3 uid="uid://c6bmoepaqnb1w"]
 
 [ext_resource type="Script" uid="uid://6ga3st2r3wgq" path="res://Src/Assets/NPC/character_body_2d.gd" id="1_0acad"]
+[ext_resource type="Texture2D" uid="uid://oem6ku5g6gw" path="res://Src/Sprites/NPC 1/f.png" id="2_623v0"]
+[ext_resource type="Texture2D" uid="uid://b0d332rt6aqxs" path="res://Src/Sprites/NPC 2/f.png" id="3_cf5w0"]
+[ext_resource type="Texture2D" uid="uid://bvs31bc71ah4f" path="res://Src/Sprites/NPC 3/f.PNG" id="4_0nvax"]
+[ext_resource type="Texture2D" uid="uid://dksq3w23i2lp4" path="res://Src/Sprites/NPC 4/f.PNG" id="5_vfbap"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p2j5r"]
 radius = 15.0
@@ -10,13 +14,76 @@ height = 60.0
 radius = 21.0
 height = 72.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_cf5w0"]
+atlas = ExtResource("2_623v0")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0nvax"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cf5w0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nvax"]
+atlas = ExtResource("3_cf5w0")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfbap"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nvax")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfbap"]
+atlas = ExtResource("4_0nvax")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m21ff"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfbap")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m21ff"]
+atlas = ExtResource("5_vfbap")
+region = Rect2(0, 0, 1620, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eqo4f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m21ff")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Npc" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 2
 motion_mode = 1
 slide_on_ceiling = false
 wall_min_slide_angle = 0.0
 script = ExtResource("1_0acad")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
 shape = SubResource("CapsuleShape2D_p2j5r")
 
 [node name="Hurtbox" type="Area2D" parent="." groups=["player"]]
@@ -26,24 +93,50 @@ shape = SubResource("CapsuleShape2D_0acad")
 debug_color = Color(0.984694, 0, 0.341084, 0.42)
 
 [node name="WanderTimer" type="Timer" parent="."]
-wait_time = 0.1
+process_callback = 0
+wait_time = 10.0
 autostart = true
 
 [node name="Label" type="Label" parent="."]
 visible = false
-offset_left = -70.0
-offset_top = -67.0
-offset_right = 74.0
-offset_bottom = -36.0
-theme_override_font_sizes/font_size = 10
+offset_left = -148.0
+offset_top = -94.0
+offset_right = 143.0
+offset_bottom = -35.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
 text = "████! shouldn't you be looking when your walking?!"
 horizontal_alignment = 1
 autowrap_mode = 1
 
 [node name="DialogTimer" type="Timer" parent="."]
+wait_time = 5.0
 one_shot = true
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+avoidance_enabled = true
+debug_enabled = true
+
+[node name="Miskin" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_0nvax")
+
+[node name="Menengah" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_vfbap")
+
+[node name="Kaya" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_m21ff")
+
+[node name="Konglo" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_eqo4f")
 
 [connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]
+[connection signal="timeout" from="WanderTimer" to="." method="_on_wander_timer_timeout"]
 [connection signal="timeout" from="DialogTimer" to="." method="_on_dialog_timer_timeout"]

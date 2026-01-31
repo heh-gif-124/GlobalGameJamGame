@@ -1,0 +1,86 @@
+[gd_scene load_steps=16 format=3 uid="uid://mbf1g2fbswwf"]
+
+[ext_resource type="Texture2D" uid="uid://b5ifm08y3vo8l" path="res://Assets_2/Interface/interface win sample.jpg" id="1_88f6h"]
+[ext_resource type="Script" uid="uid://cwu7drwsjbbd4" path="res://Scenes/ContinueGame.gd" id="1_wtkq3"]
+[ext_resource type="Texture2D" uid="uid://blpktnofk0xr4" path="res://Assets_2/Interface/bg.png" id="2_1er2g"]
+[ext_resource type="Texture2D" uid="uid://xrdnk4tvec42" path="res://Assets_2/Interface/Panel.png" id="2_r76q1"]
+[ext_resource type="Texture2D" uid="uid://dx6eo5svat0ti" path="res://Assets_2/Interface/continue.png" id="3_vio2i"]
+[ext_resource type="Script" uid="uid://ci7ygrqca57m0" path="res://Scenes/script/droti.gd" id="4_dsc3t"]
+[ext_resource type="Texture2D" uid="uid://cra1drnbofeo8" path="res://Assets_2/Interface/back.png" id="4_r14bk"]
+[ext_resource type="Texture2D" uid="uid://dsbsrt1ni4ba0" path="res://Assets_2/Interface/welldone.png" id="5_0xh3f"]
+[ext_resource type="Script" uid="uid://u155f8ntcr4v" path="res://Scenes/script/dcontinu.gd" id="6_g1o0b"]
+[ext_resource type="Texture2D" uid="uid://cn10ybd30s36d" path="res://Assets_2/Interface/Decoration win.png" id="6_x4u7i"]
+[ext_resource type="Texture2D" uid="uid://06b827clh4it" path="res://Assets_2/Interface/chara 4 win.png" id="7_bhw3q"]
+[ext_resource type="Script" uid="uid://57fritsggy3h" path="res://Scenes/script/dback.gd" id="8_li87j"]
+[ext_resource type="Script" uid="uid://bycie4uvbshyq" path="res://Scenes/script/dweldon.gd" id="10_xl0sq"]
+[ext_resource type="Script" uid="uid://q1m7feanv8vw" path="res://Scenes/script/dbiru.gd" id="12_gpseu"]
+[ext_resource type="Script" uid="uid://c437qfkn3o6je" path="res://Scenes/script/dchara.gd" id="14_rwdhe"]
+
+[node name="ContinueGame" type="Node2D"]
+script = ExtResource("1_wtkq3")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 1157.0
+offset_bottom = 651.0
+texture = ExtResource("2_1er2g")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 1161.0
+offset_bottom = 653.0
+texture = ExtResource("1_88f6h")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 267.0
+offset_top = 322.0
+offset_right = 557.0
+offset_bottom = 438.0
+rotation = -0.122173
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 276.0
+offset_top = 470.0
+offset_right = 565.0
+offset_bottom = 582.0
+rotation = -0.1309
+
+[node name="droti" type="Sprite2D" parent="."]
+position = Vector2(274, 284)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_r76q1")
+script = ExtResource("4_dsc3t")
+
+[node name="dcontinu" type="Sprite2D" parent="."]
+position = Vector2(582, 327)
+scale = Vector2(0.607407, 0.607407)
+texture = ExtResource("3_vio2i")
+script = ExtResource("6_g1o0b")
+
+[node name="dback" type="Sprite2D" parent="."]
+position = Vector2(594.444, 413.25)
+scale = Vector2(0.603704, 0.599537)
+texture = ExtResource("4_r14bk")
+script = ExtResource("8_li87j")
+
+[node name="dweldon" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(0.596296, 0.596296)
+texture = ExtResource("5_0xh3f")
+script = ExtResource("10_xl0sq")
+
+[node name="dbiru" type="Sprite2D" parent="."]
+position = Vector2(590.056, 334)
+scale = Vector2(0.616609, 0.612963)
+texture = ExtResource("6_x4u7i")
+script = ExtResource("12_gpseu")
+
+[node name="dchara" type="Sprite2D" parent="."]
+position = Vector2(579.556, 328.5)
+scale = Vector2(0.60463, 0.60463)
+texture = ExtResource("7_bhw3q")
+script = ExtResource("14_rwdhe")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

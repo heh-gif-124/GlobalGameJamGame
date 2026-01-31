@@ -1,0 +1,82 @@
+[gd_scene load_steps=15 format=3 uid="uid://digwpwx6gg7mf"]
+
+[ext_resource type="Script" uid="uid://jl4e6najg5qx" path="res://Scenes/script/GameOver.gd" id="1_4wiq1"]
+[ext_resource type="Texture2D" uid="uid://bp3b0dsv2r6ic" path="res://Assets_2/Interface/interface lose sample.jpg" id="2_fe873"]
+[ext_resource type="Texture2D" uid="uid://blpktnofk0xr4" path="res://Assets_2/Interface/bg.png" id="3_8bom3"]
+[ext_resource type="Script" uid="uid://e7jw8ex4cxqq" path="res://Scenes/TextureRect2.gd" id="4_8w4kb"]
+[ext_resource type="Texture2D" uid="uid://xrdnk4tvec42" path="res://Assets_2/Interface/Panel.png" id="5_lfx07"]
+[ext_resource type="Script" uid="uid://oumjq76amq4q" path="res://Scenes/kroti.gd" id="6_26hro"]
+[ext_resource type="Texture2D" uid="uid://d1nna6rjbr8ml" path="res://Assets_2/Interface/Fired.png" id="6_j7kt0"]
+[ext_resource type="Texture2D" uid="uid://cra1drnbofeo8" path="res://Assets_2/Interface/back.png" id="7_7752x"]
+[ext_resource type="Texture2D" uid="uid://bpdb3hjavkj4a" path="res://Assets_2/Interface/Decoration lose.png" id="8_ihu3n"]
+[ext_resource type="Script" uid="uid://hv146oxumqre" path="res://Scenes/kfired.gd" id="8_nocts"]
+[ext_resource type="Texture2D" uid="uid://dwkjlnovme6wr" path="res://Assets_2/Interface/chara 1  lose.png" id="9_vwal3"]
+[ext_resource type="Script" uid="uid://chobnvmq01qw" path="res://Scenes/kback.gd" id="10_ix45t"]
+[ext_resource type="Script" uid="uid://b2nynlgduocd4" path="res://Scenes/kmerah.gd" id="12_r8mdn"]
+[ext_resource type="Script" uid="uid://1olx6350u2xt" path="res://Scenes/kchara.gd" id="14_l344w"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_4wiq1")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -22.0
+offset_top = -10.0
+offset_right = 1184.0
+offset_bottom = 668.0
+texture = ExtResource("3_8bom3")
+expand_mode = 1
+script = ExtResource("4_8w4kb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 1157.0
+offset_bottom = 651.0
+texture = ExtResource("2_fe873")
+expand_mode = 1
+
+[node name="kroti" type="Sprite2D" parent="."]
+position = Vector2(275, 298)
+scale = Vector2(0.719907, 0.719907)
+texture = ExtResource("5_lfx07")
+script = ExtResource("6_26hro")
+
+[node name="kfired" type="Sprite2D" parent="."]
+position = Vector2(582, 328)
+scale = Vector2(0.611111, 0.611111)
+texture = ExtResource("6_j7kt0")
+script = ExtResource("8_nocts")
+
+[node name="kback" type="Sprite2D" parent="."]
+position = Vector2(584, 328)
+scale = Vector2(0.606019, 0.606019)
+texture = ExtResource("7_7752x")
+script = ExtResource("10_ix45t")
+
+[node name="kmerah" type="Sprite2D" parent="."]
+position = Vector2(575.111, 331)
+scale = Vector2(0.624074, 0.624074)
+texture = ExtResource("8_ihu3n")
+script = ExtResource("12_r8mdn")
+
+[node name="kchara" type="Sprite2D" parent="."]
+position = Vector2(566, 322)
+scale = Vector2(0.617593, 0.617593)
+texture = ExtResource("9_vwal3")
+script = ExtResource("14_l344w")
+
+[node name="Button Manager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 261.0
+offset_top = 384.0
+offset_right = 301.0
+offset_bottom = 424.0
+
+[node name="BackButton" type="Button" parent="Button Manager"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 287.0
+offset_bottom = 112.0
+rotation = -0.13439
+
+[connection signal="pressed" from="Button Manager/BackButton" to="." method="_on_back_button_pressed"]

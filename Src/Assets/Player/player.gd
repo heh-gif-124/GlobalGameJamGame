@@ -23,6 +23,11 @@ func _physics_process(delta):
 		Input.get_action_strength("down") - Input.get_action_strength("up")
 	).normalized()
 	
+	if Global.has_food  == true:
+		$Toast.visible = true
+	else:
+		$Toast.visible = false
+	
 	var lerp_weight = delta * (accel if direction else frict)
 	velocity = lerp(velocity, direction*max_speed, lerp_weight)
 	
@@ -43,6 +48,7 @@ func _swapping_mask():
 		$Miskin.visible = true
 		$Menengah.visible = false
 		$Kaya.visible = false
+		$Konglo.visible = false
 		$CPUParticles2D.emitting = true
 	elif Input.is_action_just_pressed("2nd_mask"):
 		current_mask = available_mask[1]
@@ -50,6 +56,7 @@ func _swapping_mask():
 		$Miskin.visible = false
 		$Menengah.visible = true
 		$Kaya.visible = false
+		$Konglo.visible = false
 		$CPUParticles2D.emitting = true
 	elif Input.is_action_just_pressed("3rd_mask"):
 		current_mask = available_mask[2]
@@ -57,10 +64,16 @@ func _swapping_mask():
 		$Miskin.visible = false
 		$Menengah.visible = false
 		$Kaya.visible = true
+		$Konglo.visible = false
 		$CPUParticles2D.emitting = true
 	elif Input.is_action_just_pressed("4th_mask"):
 		current_mask = available_mask[3]
 		print("swapped to: "+current_mask)
+		$Miskin.visible = false
+		$Menengah.visible = false
+		$Kaya.visible = false
+		$Konglo.visible = true
+		$CPUParticles2D.emitting = true
 	
 	if Input.is_action_just_pressed("weii"):
 		$AudioStreamPlayer2D.play(0)
@@ -83,22 +96,23 @@ func _animation_handler():
 			else:
 				$Miskin.play("default")
 	elif  current_mask == available_mask[1]:
-		if Global.has_food == true:
-			$Menengah.play("has_food")
+		if Input.is_action_pressed("right"):
+			$Menengah.play("left_walk")
+		elif Input.is_action_pressed("left"):
+			$Menengah.play("right_walk_1")
 		else:
-			if Input.is_action_pressed("right"):
-				$Menengah.play("left_walk")
-			elif Input.is_action_pressed("left"):
-				$Menengah.play("right_walk_1")
-			else:
-				$Menengah.play("default")
+			$Menengah.play("default")
 	elif  current_mask == available_mask[2]:
-		if Global.has_food == true:
-			$Kaya.play("has_food")
+		if Input.is_action_pressed("right"):
+			$Kaya.play("left_walk")
+		elif Input.is_action_pressed("left"):
+			$Kaya.play("right_walk_1")
 		else:
-			if Input.is_action_pressed("right"):
-				$Kaya.play("left_walk")
-			elif Input.is_action_pressed("left"):
-				$Kaya.play("right_walk_1")
-			else:
-				$Kaya.play("default")
+			$Kaya.play("default")
+	elif  current_mask == available_mask[3]:
+		if Input.is_action_pressed("right"):
+			$Konglo.play("left_walk")
+		elif Input.is_action_pressed("left"):
+			$Konglo.play("right_walk_1")
+		else:
+			$Konglo.play("default")

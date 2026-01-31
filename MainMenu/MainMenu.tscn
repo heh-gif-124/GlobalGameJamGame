@@ -1,0 +1,133 @@
+[gd_scene load_steps=20 format=3 uid="uid://dh28lbki84ri"]
+
+[ext_resource type="Texture2D" uid="uid://d0attxhmvlwx0" path="res://Assets_2/Interface/IMG_4641.PNG" id="1_kd371"]
+[ext_resource type="Script" uid="uid://cmovg8mpgp7wk" path="res://MainMenu/MainMenu.gd" id="1_lq1oy"]
+[ext_resource type="Texture2D" uid="uid://blpktnofk0xr4" path="res://Assets_2/Interface/bg.png" id="2_thrcl"]
+[ext_resource type="Texture2D" uid="uid://xrdnk4tvec42" path="res://Assets_2/Interface/Panel.png" id="2_xtc2y"]
+[ext_resource type="Texture2D" uid="uid://dmpxgcuibx4ua" path="res://Assets_2/Interface/IMG_4639.PNG" id="3_60qds"]
+[ext_resource type="Texture2D" uid="uid://c371cpc5qyis0" path="res://Assets_2/Interface/IMG_4644.PNG" id="3_lm6vx"]
+[ext_resource type="Script" uid="uid://cy0j3tkrmplm8" path="res://MainMenu/TextureRect2.gd" id="3_sc47f"]
+[ext_resource type="Script" uid="uid://bvcd55aqi2bdi" path="res://MainMenu/script/Roti.gd" id="4_be6il"]
+[ext_resource type="Texture2D" uid="uid://cvhkl7q5klq7c" path="res://Assets_2/Interface/QUIT.png" id="5_5fq1x"]
+[ext_resource type="Script" uid="uid://bcvnvhlq7lxu5" path="res://MainMenu/script/Continue.gd" id="6_8qwb7"]
+[ext_resource type="Texture2D" uid="uid://cdwkyb0di7uny" path="res://Assets_2/Interface/IMG_4638.PNG" id="6_tqt13"]
+[ext_resource type="Texture2D" uid="uid://m330cwn4ifqg" path="res://Assets_2/Interface/IMG_4637.PNG" id="7_67hlw"]
+[ext_resource type="Script" uid="uid://ceuxdwtgafijw" path="res://MainMenu/script/Quit.gd" id="8_msp51"]
+[ext_resource type="Texture2D" uid="uid://7cdxvuitnig8" path="res://Assets_2/Interface/new game bar.png" id="8_okaue"]
+[ext_resource type="Texture2D" uid="uid://n7gjmleneiwf" path="res://Assets_2/Interface/chara 2 menu.png" id="9_mxbow"]
+[ext_resource type="Script" uid="uid://borb2ni0i8ek" path="res://MainMenu/script/awan.gd" id="10_8yrlm"]
+[ext_resource type="Script" uid="uid://cu6y7cn5u4765" path="res://MainMenu/script/Sprite2D.gd" id="11_rc6v6"]
+[ext_resource type="Script" uid="uid://dh5pidysqwgfv" path="res://MainMenu/script/racing.gd" id="12_dmy5f"]
+[ext_resource type="Script" uid="uid://bh8wak6tk4j46" path="res://MainMenu/script/Newgame.gd" id="14_4bycb"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_lq1oy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_top = -250.0
+offset_right = 1152.0
+offset_bottom = 902.0
+texture = ExtResource("1_kd371")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 1159.0
+offset_bottom = 652.0
+texture = ExtResource("2_thrcl")
+expand_mode = 1
+script = ExtResource("3_sc47f")
+
+[node name="border" type="Sprite2D" parent="."]
+position = Vector2(575.5, 316)
+scale = Vector2(0.564941, 0.564209)
+texture = ExtResource("3_lm6vx")
+
+[node name="Roti" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(592, 368)
+scale = Vector2(0.596296, 0.596296)
+texture = ExtResource("2_xtc2y")
+script = ExtResource("4_be6il")
+
+[node name="Decorpojok kiri" type="Sprite2D" parent="."]
+position = Vector2(575, 325)
+scale = Vector2(0.582321, 0.559541)
+texture = ExtResource("3_60qds")
+
+[node name="Continue" type="Sprite2D" parent="."]
+texture_filter = 1
+script = ExtResource("6_8qwb7")
+
+[node name="Quit" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(678, 493)
+scale = Vector2(0.639815, 0.639815)
+texture = ExtResource("5_5fq1x")
+region_enabled = true
+region_rect = Rect2(730.735, 640.214, 658.845, 303.069)
+script = ExtResource("8_msp51")
+
+[node name="awan" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(735, 131)
+scale = Vector2(0.337954, 0.337954)
+texture = ExtResource("6_tqt13")
+script = ExtResource("10_8yrlm")
+
+[node name="racing" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(737, 129)
+scale = Vector2(0.30661, 0.30661)
+texture = ExtResource("7_67hlw")
+script = ExtResource("12_dmy5f")
+
+[node name="Newgame" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 378)
+scale = Vector2(0.61713, 0.61713)
+texture = ExtResource("8_okaue")
+script = ExtResource("14_4bycb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(590, 327)
+scale = Vector2(0.562963, 0.562963)
+texture = ExtResource("9_mxbow")
+script = ExtResource("11_rc6v6")
+
+[node name="buttonmanager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="newgame" type="Button" parent="buttonmanager"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 543.0
+offset_top = 308.0
+offset_right = 845.0
+offset_bottom = 424.0
+rotation = -0.148353
+
+[node name="quit" type="Button" parent="buttonmanager"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 571.0
+offset_top = 481.0
+offset_right = 831.0
+offset_bottom = 580.0
+rotation = -0.148353
+
+[connection signal="pressed" from="buttonmanager/newgame" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="buttonmanager/newgame" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="buttonmanager/quit" to="." method="_on_quit_pressed"]

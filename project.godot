@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GGJThing"
-run/main_scene="uid://qmp0wysyle4c"
+run/main_scene="uid://chy6mcb2pl3ri"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
